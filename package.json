@@ -1,0 +1,31 @@
+{
+  "name": "maxim-desktop",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "tsc",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "electron": "^31.3.0",
+    "electron-builder": "^24.6.0",
+    "typescript": "^5.5.4"
+  },
+  "build": {
+    "appId": "com.example.maxim-desktop",
+    "productName": "Maxim Desktop",
+    "files": [
+      "dist/**/*",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+  }
+}

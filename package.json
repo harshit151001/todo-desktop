@@ -14,7 +14,8 @@
   "sideEffects": false,
   "devDependencies": {
     "electron": "^31.3.0",
-    "electron-builder": "^24.6.0",
+    "electron-builder": "^24.13.3",
+    "terser-webpack-plugin": "^5.3.10",
     "ts-loader": "^9.5.1",
     "typescript": "^5.5.4",
     "webpack": "^5.93.0",

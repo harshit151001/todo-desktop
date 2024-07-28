@@ -1,16 +1,14 @@
-
-```markdown
 # Maxim Desktop
 
 Maxim Desktop is an Electron-based desktop application that wraps our web-based TODO app, providing additional native functionality.
 
 ## Features
 
-1. **Electron Shell**: Loads the hosted web application in a desktop environment.
-2. **Preload Scripts**: Injects native functionality into the web app.
-3. **File System Access**: Uses Electron's file system API for persistent storage, unlike the web version which uses localStorage.
-4. **Native Notifications**: Utilizes Electron's native notification system, providing a more integrated experience compared to browser notifications.
-5. **Custom Dialogs**: Implements Electron's dialog system for a native look and feel, differing from the web version's browser-based dialogs.
+- **Electron Shell**: Loads the hosted web application in a desktop environment.
+- **Preload Scripts**: Injects native functionality into the web app.
+- **File System Access**: Uses Electron's file system API for persistent storage, unlike the web version which uses localStorage.
+- **Native Notifications**: Utilizes Electron's native notification system, providing a more integrated experience compared to browser notifications.
+- **Custom Dialogs**: Implements Electron's dialog system for a native look and feel, differing from the web version's browser-based dialogs.
 
 ## Prerequisites
 
@@ -20,51 +18,42 @@ Maxim Desktop is an Electron-based desktop application that wraps our web-based 
 ## Installation
 
 1. Clone the repository:
-   ```
+   ```bash
    git clone https://github.com/harshit151001/todo-desktop
    cd maxim-desktop
-   ```
+Install dependencies:
+bash
 
-2. Install dependencies:
-   ```
-   npm install
-   ```
-
-## Development
-
+npm install
+Development
 To run the app in development mode:
 
-```
-npm run start
-```
+bash
 
+npm run start
 This will start the Electron app and load the development version of the web application.
 
-## Building
-
+Building
 To build the application:
 
-```
-npm run build
-```
+bash
 
+npm run build
 This command uses webpack to bundle and optimize the application.
 
-## Packaging
-
+Packaging
 To package the application for distribution:
 
-```
-npm run package
-```
+bash
 
+npm run package
 This uses electron-builder to create distributable packages for your target platforms.
 
-## Configuration
+Configuration
+The package.json file contains important configuration for both the development environment and the build process:
 
-The `package.json` file contains important configuration for both the development environment and the build process:
+json
 
-```json
 {
   "name": "maxim-desktop",
   "version": "1.0.0",
@@ -98,14 +87,10 @@ The `package.json` file contains important configuration for both the developmen
     "compression": "maximum"
   }
 }
-```
-
-## Project Structure
-
-- `src/`: Source files for the Electron app
-  - `main.ts`: Main process file
-  - `preload.ts`: Preload script for injecting native functionality
-- `dist/`: Compiled JavaScript files
-- `assets/`: Application icons and other resources
-- `webpack.config.js`: Webpack configuration for building the app
-
+Project Structure
+src/: Source files for the Electron app
+main.ts: Main process file
+preload.ts: Preload script for injecting native functionality
+dist/: Compiled JavaScript files
+assets/: Application icons and other resources
+webpack.config.js: Webpack configuration for building the app
